@@ -1,0 +1,29 @@
+Eu tenho N tweets e preciso trabalhar palavra por palavra deles.
+
+Primeiro cria-se uma lista, de cada um:
+Ex:  tweet: "assaltantes chave destrancam algemas "
+
+Preciso criar uma lista assim
+List<string> palavra1 = {"assaltantes", "chave", "destrancam", "algemas "} 
+     .
+     .
+List<string> palavraN = {"assaltantes", "invadem", "casa", "matam"} 
+
+List<List<String>> _documents_ = Arrays.asList(palavra1, palavra2 ... palavraN);
+
+//Aqui há o calculo o tdIdf de cada Tweet em relação a TODAS as listas 
+double *tfidf* = calculator.tfIdf(_palavra1_, _documents_, "assaltantes");
+double *tfidf* = calculator.tfIdf(palavra1, documents, "chave");
+double *tfidf* = calculator.tfIdf(palavra1, documents, "destrancam");
+double *tfidf* = calculator.tfIdf(palavra1, documents, "algemas");
+
+Coleta-se os N tweets e criar uma matriz. Resultando em:
+
+
+               assaltantes   |  chave |  destrancam  |  invadem | casa  | matam  .....  palavra N
+tweet1           *tfidf*     |
+tweet2                          
+    .
+    .
+    .
+tweetN           *tfidf*     |
