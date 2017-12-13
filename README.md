@@ -17,3 +17,6 @@ Para a primeira avaliação do SVM descrita no arquivo 'Primeiros passos para ca
 
 Para isso usar repositorio 'windows' em Sistema-Crion (referente à LIBSVM)
 - Avaliação do SVM teste final
+
+
+Arquivo "Exemplo documento saida para LIBSVM.txt" informando a saída .txt criada para a aplicação do LIBSVM
